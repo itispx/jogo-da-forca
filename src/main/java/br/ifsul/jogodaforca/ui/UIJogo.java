@@ -119,7 +119,6 @@ public class UIJogo extends JFrame {
 						}
 
 						if (indexes.isEmpty()) {
-							System.out.println("Wrong");
 							erros.add(inputValue);
 							textAreaTentativas.append("| " + inputValue + " ");
 							vidas--;
@@ -140,7 +139,6 @@ public class UIJogo extends JFrame {
 							}
 
 						} else {
-							System.out.println("Right");
 							acertos.add(inputValue);
 							for (Integer i : indexes) {
 								exibir.set(i, inputValue);
@@ -193,8 +191,6 @@ public class UIJogo extends JFrame {
 
 		textAreaPalavra.setBounds(10, 36, 291, 54);
 		contentPane.add(textAreaPalavra);
-
-		System.out.println(palavra.getPalavra());
 	}
 
 	private Image getScaledImage(Image srcImg, int w, int h) {
