@@ -11,6 +11,4 @@ public interface PalavraRepository extends JpaRepository<Palavra, Integer> {
 
 	@Query(nativeQuery = true, value = "SELECT * FROM palavra p WHERE p.dificuldade = false ORDER BY rand() LIMIT 1")
 	Palavra findRandomByDificuldade(Boolean dificuldade);
-	// SELECT p.palavra FROM palavra p WHERE p.dificuldade = false ORDER BY rand()
-	// LIMIT 1;
 }
